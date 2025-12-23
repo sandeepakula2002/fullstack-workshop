@@ -1,0 +1,14 @@
+let a = 42;
+let b = 'Hello';
+let c = true;
+let d = null;
+let e = undefined;
+let f = Symbol('id');
+let g = 9007199254740991n;
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);
+console.log(typeof f);
+console.log(typeof g);
