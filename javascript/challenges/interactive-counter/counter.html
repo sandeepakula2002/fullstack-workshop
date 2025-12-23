@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Counter</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    #count { font-size: 40px; margin: 20px; }
+    button { padding: 10px 20px; margin: 5px; }
+  </style>
+</head>
+<body>
+
+  <div id="count">0</div>
+
+  <button onclick="decrement()">-</button>
+  <button onclick="reset()">Reset</button>
+  <button onclick="increment()">+</button>
+
+  <div>
+    Step:
+    <button onclick="setStep(1)">1</button>
+    <button onclick="setStep(5)">5</button>
+    <button onclick="setStep(10)">10</button>
+  </div>
+
+  <script src="counter.js"></script>
+</body>
+</html>
