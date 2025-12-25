@@ -1,184 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Sagar | Portfolio</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandeep Sagar | Portfolio</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: blanchedalmond;
+        color: #333;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #ffe0b2;
+    }
+
+    nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #fff8e1;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .section-title {
+        display: inline-block;
+        padding: 12px 25px;
+        border: 3px solid #ff8c00;
+        border-radius: 12px;
+        background-color: #fff3e0;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .about-content img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 3px solid #ff8c00;
+    }
+
+    .about-content p {
+        max-width: 700px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    ul.skills-list, ul.tech-tags {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    ul.skills-list li, ul.tech-tags li {
+        padding: 8px 15px;
+        border: 1px solid #ff8c00;
+        border-radius: 8px;
+        background-color: #fff3e0;
+    }
+
+    h3 {
+        display: inline-block;
+        padding: 8px 20px;
+        border: 2px solid #ff8c00;
+        border-radius: 8px;
+        background-color: #fff3e0;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-card a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 25px;
+        border-radius: 8px;
+        background-color: #ffcc80;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        transition: 0.3s;
+    }
+
+    .project-card a:hover {
+        background-color: #ffa726;
+        color: white;
+    }
+
+    form input, form textarea {
+        width: 80%;
+        max-width: 400px;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    form button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        background-color: #ffcc80;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    form button:hover {
+        background-color: #ffa726;
+        color: white;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+</style>
 </head>
-<body class="bg-light py-4">
-    <div class="container">
-        <header class="text-center mb-5">
-            <h1 class="display-4 fw-bold mb-3">Welcome to Sandeep Sagar's Portfolio</h1>
-            <nav>
-                <a href="#about" class="btn btn-outline-light btn-lg mx-2">Home</a>
-                <a href="#projects" class="btn btn-outline-light btn-lg mx-2">Projects</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg mx-2">Contact</a>
-            </nav>
-        </header>
-
-        <section id="about" class="mb-5">
-            <div class="row align-items-center mb-5">
-                <div class="col-md-4 text-center mb-4">
-                    <img src="Passport_Size_Photo-removebg-preview.png" alt="Sandeep" 
-                         class="img-fluid rounded-circle shadow" width="150" height="150">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="section-title mb-4">About Section</h2>
-                    <p class="lead">I am a Computer Science graduate and a fresher with a strong foundation in web development and programming. I have hands-on experience with HTML, CSS, JavaScript, PHP, SQL, Python, and Java, along with a good understanding of OOPS and computer networks. I enjoy building practical applications and learning by doing.</p>
-                    <p>I have completed internships and certifications in web development, Python, Java, and cloud technologies, including Microsoft Azure. These experiences helped me understand real-world project workflows, teamwork, and problem-solving. I am particularly interested in software development and continuously improving my technical skills.</p>
-                    <p class="mb-0">I am a motivated learner, detail-oriented, and eager to start my professional journey in the IT industry.</p>
-                </div>
-            </div>
-
-            <ul class="skills-list row justify-content-center list-unstyled g-3">
-                <li class="col-md-6 col-lg-4"><span class="badge bg-primary w-100 p-3">Programming: Python, Java</span></li>
-                <li class="col-md-6 col-lg-4"><span class="badge bg-success w-100 p-3">Web Development: HTML, CSS, JS, PHP</span></li>
-                <li class="col-md-6 col-lg-4"><span class="badge bg-info w-100 p-3">Databases: SQL, MySQL</span></li>
-                <li class="col-md-6 col-lg-4"><span class="badge bg-secondary w-100 p-3">Core Concepts: OOPS, DBMS, Networks</span></li>
-                <li class="col-md-6 col-lg-4"><span class="badge bg-warning text-dark w-100 p-3">Cloud: Microsoft Azure</span></li>
-                <li class="col-md-6 col-lg-4"><span class="badge bg-light border w-100 p-3">Tools: Git, API, Testing</span></li>
-            </ul>
-        </section>
-
-        <section id="projects" class="mb-5">
-            <div class="text-center mb-5">
-                <h2 class="section-title mb-4">MY PROJECT</h2>
-                <h3 class="display-6 fw-bold mb-4">PAYING GUEST MANAGEMENT SYSTEM</h3>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <p class="lead mb-4">The PG Management System is a web-based application designed to simplify and automate the management of paying guest accommodations. It allows administrators to efficiently handle tenant details, room allocation, rent tracking, and basic record management through a user-friendly interface.</p>
-                    <p>Developed using HTML, CSS, JavaScript, PHP, and MySQL, the project implements CRUD operations, form validation, and secure database interactions. This system improves accuracy, saves time for PG owners, and provides a reliable solution for managing daily PG operations effectively.</p>
-                </div>
-            </div>
-            
-            <div class="project-card card shadow-lg mx-auto mt-4" style="max-width: 600px;">
-                <div class="card-body p-4">
-                    <ul class="tech-tags list-unstyled d-flex justify-content-center flex-wrap mb-4">
-                        <li class="badge bg-primary me-2 mb-1">HTML</li>
-                        <li class="badge bg-warning text-dark me-2 mb-1">CSS</li>
-                        <li class="badge bg-danger me-2 mb-1">JavaScript</li>
-                        <li class="badge bg-info me-2 mb-1">PHP</li>
-                        <li class="badge bg-secondary">MySQL</li>
-                    </ul>
-                    <a href="#" class="btn btn-dark btn-lg w-100" target="_blank">View Project</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="mb-5">
-            <h3 class="section-title text-center mb-5">CONTACT FORM</h3>
-            <form class="row g-3 justify-content-center">
-                <div class="col-md-6">
-                    <input type="text" class="form-control form-control-lg" placeholder="Name" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control form-control-lg" placeholder="Email" required>
-                </div>
-                <div class="col-12 col-md-8 mx-auto">
-                    <textarea class="form-control form-control-lg" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-warning btn-lg px-5">Submit</button>
-                </div>
-            </form>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-outline-primary mx-2 mb-2">Instagram</a>
-                <a href="#" class="btn btn-primary mx-2 mb-2">LinkedIn</a>
-                <a href="#" class="btn btn-info text-white mx-2 mb-2">Twitter</a>
-            </div>
-        </section>
-
-        <footer class="text-center py-4">
-            <p class="mb-0 fw-bold">2025 All Rights Reserved.</p>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep Sagar | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
-    <header>
-        <h1>Welcome to Sandeep Sagar's Portfolio</h1>
-        <nav>
-            <a href="#about">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about" style="text-align: center;">
-        <h2 class="section-title">About Section</h2>
-        <img src="Passport_Size_Photo-removebg-preview.png" alt="Sandeep" width="150" height="150" style="margin: auto; display: block;">
-        
-        <p>I am a Computer Science graduate and a fresher with a strong foundation in web development and programming. I have hands-on experience with HTML, CSS, JavaScript, PHP, SQL, Python, and Java, along with a good understanding of OOPS and computer networks. I enjoy building practical applications and learning by doing.</p>
-        
-        <p>I have completed internships and certifications in web development, Python, Java, and cloud technologies, including Microsoft Azure. These experiences helped me understand real-world project workflows, teamwork, and problem-solving. I am particularly interested in software development and continuously improving my technical skills.</p>
-        
-        <p>I am a motivated learner, detail-oriented, and eager to start my professional journey in the IT industry.</p>
+<header>
+    <h1>Welcome to Sandeep Sagar's Portfolio</h1>
+    <nav>
+        <a href="#about">Home</a> | 
+        <a href="#projects">Projects</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
+<section id="about">
+    <h2 class="section-title">ABOUT ME</h2>
+    <div class="about-content">
+        <img src="Passport_Size_Photo-removebg-preview.png" alt="Sandeep">
+        <p>I am a Computer Science graduate and a fresher with a strong foundation in web development and programming. I have hands-on experience with HTML, CSS, JavaScript, PHP, SQL, Python, and Java, along with a good understanding of OOPS and computer networks.</p>
+        <p>I have completed internships and certifications in web development, Python, Java, and cloud technologies, including Microsoft Azure. These experiences helped me understand real-world project workflows, teamwork, and problem-solving.</p>
+        <p>I am motivated, detail-oriented, and eager to start my professional journey in the IT industry.</p>
         <ul class="skills-list">
-            <li>Programming: Python, Java</li>
-            <li>Web Development: HTML, CSS, JavaScript, PHP</li>
-            <li>Databases: SQL, MySQL</li>
-            <li>Core Concepts: OOPS, DBMS, Computer Networks</li>
-            <li>Cloud Basics: Microsoft Azure</li>
-            <li>Tools & Practices: Git, API Integration, Basic Testing</li>
-            <li>Soft Skills: Problem-solving, Quick learner, Team collaboration, Communication</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>SQL/MySQL</li>
+            <li>OOPS & DBMS</li>
+            <li>Computer Networks</li>
+            <li>Azure Basics</li>
+            <li>Git & API Integration</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <section id="projects">
-        <div style="text-align: center;">
-            <h2 class="section-title">MY PROJECT</h2>
-        </div>
-        <h3 style="text-align: center;">PAYING GUEST MANAGEMENT SYSTEM</h3>
-        <p>The PG Management System is a web-based application designed to simplify and automate the management of paying guest accommodations. It allows administrators to efficiently handle tenant details, room allocation, rent tracking, and basic record management through a user-friendly interface.</p>
-        <p>Developed using HTML, CSS, JavaScript, PHP, and MySQL, the project implements CRUD operations, form validation, and secure database interactions. This system improves accuracy, saves time for PG owners, and provides a reliable solution for managing daily PG operations effectively.</p>
-        
-        <div class="project-card">
-            <ul class="tech-tags">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-            </ul>
-            <a href="#" target="_blank">View Project</a>
-        </div>
-    </section>
+<section id="projects">
+    <h2 class="section-title">MY PROJECTS</h2>
+    <h3>PAYING GUEST MANAGEMENT SYSTEM</h3>
+    <p>The PG Management System is a web-based application designed to simplify and automate the management of paying guest accommodations.</p>
+    <p>Developed using HTML, CSS, JavaScript, PHP, and MySQL, the project implements CRUD operations, form validation, and secure database interactions. This system improves accuracy, saves time for PG owners, and provides a reliable solution for managing daily PG operations effectively.</p>
+    <div class="project-card">
+        <ul class="tech-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+        </ul>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+</section>
 
-    <section id="contact" style="text-align: center;">
-        <h3 class="section-title">CONTACT FORM</h3>
-        <form style="text-align: center;">
-            <input type="text" placeholder="Name" required><br><br>
-            <input type="email" placeholder="Email" required><br><br>
-            <textarea placeholder="Message" required></textarea><br><br>
-            <button type="submit" style="background-color: yellow;">Submit</button>
-        </form>
-        <p>
-            <a href="#">Instagram</a> |
-            <a href="#">LinkedIn</a> |
-            <a href="#">Twitter</a>
-        </p>
-    </section>
+<section id="contact">
+    <h2 class="section-title">CONTACT ME</h2>
+    <form>
+        <input type="text" placeholder="Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <textarea placeholder="Message" required rows="5"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    <p>
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a> |
+        <a href="#">Twitter</a>
+    </p>
+</section>
 
-    <footer>
-        <p style="text-align: center;">2025 All Rights Reserved.</p>
-    </footer>
+<footer>
+    <p>© 2025 All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
