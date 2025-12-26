@@ -1,0 +1,110 @@
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #facc15;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #fff8dc;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    border: 3px solid #facc15;
+}
+
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    background: #fff3c4;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.project-box {
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.project-box a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.project-box a:hover {
+    background-color: #555;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #facc15;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #e6b800;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+}
