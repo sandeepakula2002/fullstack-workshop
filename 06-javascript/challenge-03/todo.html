@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo with Categories</title>
+</head>
+
+<body>
+
+  <header>
+    <h2>Todo List</h2>
+  </header>
+
+  <main>
+    <section>
+      <input type="text" id="taskInput" placeholder="Add task">
+
+      <select id="categorySelect">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+      </select>
+
+      <button id="addBtn">Add</button>
+    </section>
+
+    <hr>
+
+    <section>
+      <span>Filter:</span>
+      <button class="filter" data-category="All">All</button>
+      <button class="filter" data-category="Work">Work</button>
+      <button class="filter" data-category="Personal">Personal</button>
+    </section>
+
+    <section>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="todo.js"></script>
+</body>
+</html>
