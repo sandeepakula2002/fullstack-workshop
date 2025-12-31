@@ -1,3 +1,4 @@
-hello world
-hi sandeep
-how are you
+#!/bin/bash
+set -e
+
+echo "Hello World"
