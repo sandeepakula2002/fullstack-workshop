@@ -1,13 +1,13 @@
 # Review: 01-linux
 
 **Exercise:**  Exercise: Log File Analyzer Script
-**Review Date:** 2025-12-30 15:25
+**Review Date:** 2025-12-31 09:37
 
 ---
 
 ## Status: ✅ Submitted
 
-**Files submitted:** 7
+**Files submitted:** 10
 
 ### Required Files
 
@@ -15,29 +15,41 @@
 
 ### Code Review
 
+📄 **log-analyzer.sh**
+   Path: `01-linux/challenge-01/log-analyzer.sh`
+   Lines: 39
+
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
+    - ✅ Handles command-line arguments
+    - 💡 Consider adding more comments
+    - ✅ Variables are properly quoted
+
+   **Score: 4/5**
+
 📄 **hello world.sh**
    Path: `01-linux/exercises/hello world.sh`
-   Lines: 2
+   Lines: 4
 
-    - ❌ Missing shebang (`#!/bin/bash`)
-    - ❌ Missing `set -e` for error handling
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
     - ⚠️ No argument handling detected
     - 💡 Consider adding more comments
     - 💡 Consider quoting variables to handle spaces
 
-   **Score: 0/5**
+   **Score: 2/5**
 
 📄 **home.sh**
    Path: `01-linux/exercises/home.sh`
-   Lines: 1
+   Lines: 4
 
-    - ❌ Missing shebang (`#!/bin/bash`)
-    - ❌ Missing `set -e` for error handling
+    - ✅ Has shebang (`#!/bin/bash`)
+    - ✅ Has error handling (`set -e`)
     - ⚠️ No argument handling detected
     - 💡 Consider adding more comments
     - 💡 Consider quoting variables to handle spaces
 
-   **Score: 0/5**
+   **Score: 2/5**
 
 📄 **log-analyzer.sh**
    Path: `01-linux/log-analyzer.sh`
@@ -51,7 +63,7 @@
 
    **Score: 3/5**
 
-### Topic Score: 8 / 20 (40%)
+### Topic Score: 16 / 25 (64%)
 
 ### Technical Checklist
 
@@ -67,9 +79,7 @@
 
 ## Challenge
 
-**Status:** ⚠️ Not submitted
-
-Submit to: `01-linux/challenge-01/`
+**Status:** ✅ Submitted (2 files)
 
 ---
 
