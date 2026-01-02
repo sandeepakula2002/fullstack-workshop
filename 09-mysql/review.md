@@ -1,7 +1,7 @@
 # Review: 09-mysql
 
 **Exercise:**  Exercise: E-Commerce Database Design and Queries
-**Review Date:** 2026-01-02 13:54
+**Review Date:** 2026-01-02 16:46
 
 ---
 
@@ -27,116 +27,36 @@ Please complete the correct exercise and resubmit.
 
 ## Challenge
 
-**Status:** ✅ Submitted (8 files)
+**Status:** ✅ Submitted (2 files)
 
 ### Challenge Relevance Check
 
-✅ Submission appears relevant to the exercise
-   Found keywords: employee department salary project assignment 
+⚠️ Submission partially matches exercise requirements
+   Found: employee department salary 
+   Missing: project assignment 
 
 ### Challenge Code Review
 
-📄 **department-stats.sql**
+📄 **queries.sql**
    Lines: 8
-
-    📋 **Challenge 1: Department Stats**
-    Expected: department, employee_count, avg_salary, max_salary
-
-    - ✅ Groups by department
-    - ✅ Counts employees (COUNT(*))
-    - ✅ Calculates average salary
-    - ✅ Finds maximum salary
-    - ✅ Filters departments with >2 employees (HAVING)
-
-   **Score: 5/5**
-
-📄 **employee-hierarchy.sql**
-   Lines: 6
-
-    📋 **Challenge 2: Employee Hierarchy**
-    Expected: employee_name, manager_name (self-join)
-
-    - ✅ Uses self-join on employees table
-    - ✅ Uses LEFT JOIN (handles employees without managers)
-    - ✅ Joins on manager_id = id
-    - ✅ Uses table aliases
-
-   **Score: 4/4**
-
-📄 **name-formatter.sql**
-   Lines: 13
-
-    📋 **Challenge 6: Employee Name Formatter**
-    Expected: formatted_name, email, initials (string functions)
-
-    - ✅ Uses UPPER() function
-    - ✅ Uses CONCAT() for string building
-    - ✅ Uses LEFT() for initials
-    - ✅ Generates email format
-
-   **Score: 4/4**
-
-📄 **project-workload.sql**
-   Lines: 10
-
-    📋 **Challenge 3: Project Workload**
-    Expected: project_name, budget, team_size, total_hours
-
-    - ✅ Joins projects with assignments
-    - ✅ Counts team members
-    - ✅ Sums allocated hours
-    - ✅ Filters budget > 50000
-    - ✅ Orders by total hours descending
-
-   **Score: 5/5**
-
-📄 **salary-adjustment.sql**
-   Lines: 24
-
-    📋 **SQL Query Review**
-
-    - ✅ Contains SELECT statement
-    - ✅ Uses filtering/joining
-
-   **Score: 2/3**
-
-📄 **tenure-function.sql**
-   Lines: 25
 
     📋 **SQL Query Review**
 
     - ✅ Contains SELECT statement
     - ✅ Specifies table source
+    - ✅ Uses filtering/joining
 
-   **Score: 2/3**
+   **Score: 3/3**
 
-📄 **top-earners.sql**
-   Lines: 10
+📄 **schema.sql**
+   Lines: 9
 
-    📋 **Challenge 4: Top Earners**
-    Expected: department, name, salary, rank_in_dept (window function)
+    📋 **SQL Query Review**
 
-    - ✅ Uses window ranking function
-    - ✅ Partitions by department
-    - ✅ Orders by salary descending
-    - ✅ Filters top 3 earners
 
-   **Score: 4/4**
+   **Score: 0/3**
 
-📄 **unassigned-resources.sql**
-   Lines: 4
-
-    📋 **Challenge 5: Unassigned Resources**
-    Expected: id, name, department (employees not in any project)
-
-    - ✅ Uses LEFT JOIN with assignments
-    - ✅ Checks for NULL (unassigned employees)
-    - ✅ References employee_id for join
-    - ✅ Selects required columns (id, name, department)
-
-   **Score: 4/4**
-
-### Challenge Score: 30 / 32 (93%)
+### Challenge Score: 3 / 6 (50%)
 
 
 ---
